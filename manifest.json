@@ -1,16 +1,16 @@
 {
-  "id": "com.yourname.stremioaddon",
+  "id": "stremio-addon",
   "version": "1.0.0",
-  "name": "Live TV Channel Addon",
-  "description": "A live TV channel streaming addon",
-  "types": ["streaming"],  // This needs to be an array
+  "name": "My Stremio Addon",
+  "description": "An addon for streaming content",
+  "types": ["movie", "series"], 
   "resources": ["catalog", "meta"],
-  "idPrefixes": ["com.yourname"],
-  "catalogs": ["livetv:]
+  "idPrefixes": ["stremio"],
+  "catalogs": [
     {
-      "type": "streaming",
-      "id": "tv-channel",
-      "name": "Live TV Channel"
+      "type": "movie",
+      "id": "my-movie-catalog",
+      "name": "My Movie Catalog"
     }
   ]
 }
