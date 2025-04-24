@@ -8,7 +8,7 @@ const builder = new addonBuilder({
   types: ["movie & series"],
   resources: ["stream"],
   idPrefixes: ["liveaddon"],
-  catalogs: []
+  catalogs: [movie & series]
 });
 
 const m3u8Link = "http://a1.lion.wine:80/live/x9Kw7670/8cxU9044/1225472.m3u8";
