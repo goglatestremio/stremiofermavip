@@ -1,17 +1,12 @@
 {
-  "id": "com.youraddon.stremio",
+  "id": "my-addon",
   "version": "1.0.0",
-  "name": "My Live Addon",
-  "types": ["movie", "series"],  // The types should be an array of your addon types
-  "catalogs": [
-    {
-      "type": "movie",
-      "id": "movies",
-      "name": "Movies"
-    }
-  ],
-  "resources": ["catalog"],
-  "addon": {
-    "url": "http://your-addon-url.com/manifest.json"
-  }
+  "name": "My Live Stream Addon",
+  "types": ["stream"],
+  "description": "A live stream addon for Stremio.",
+  "catalogs": [LIVETV],
+  "resources": ["catalog", "stream"],
+  "idPrefixes": ["custom"],
+  "addons": [LIVETV],
+  "icon": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Film_Aksion_AL_logo.png"
 }
