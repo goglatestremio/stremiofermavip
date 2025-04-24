@@ -5,7 +5,7 @@ const builder = new addonBuilder({
   version: "1.0.0",
   name: "Stremio Live Addon",
   description: "Watch live TV channels via M3U8 links",
-  types: ["tv"],
+  types: ["movie & series"],
   resources: ["stream"],
   idPrefixes: ["liveaddon"],
   catalogs: []
