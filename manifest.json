@@ -1,16 +1,24 @@
 {
-  "id": "stremio-addon",
+  "id": "org.stremio.addon.sample",
   "version": "1.0.0",
-  "name": "My Stremio Addon",
-  "description": "An addon for streaming content",
-  "types": ["movie", "series"], 
-  "resources": ["catalog", "meta"],
-  "idPrefixes": ["stremio"],
+  "name": "My Addon",
+  "description": "This is an example Stremio addon",
+  "types": ["movie", "series"],  // This should be an array with at least one type
+  "icon": "https://example.com/icon.png",
   "catalogs": [
     {
       "type": "movie",
-      "id": "my-movie-catalog",
-      "name": "My Movie Catalog"
+      "id": "sample-movie-catalog",
+      "name": "Sample Movies",
+      "description": "A sample movie catalog"
+    },
+    {
+      "type": "series",
+      "id": "sample-series-catalog",
+      "name": "Sample Series",
+      "description": "A sample series catalog"
     }
-  ]
+  ],
+  "resources": ["catalog", "meta", "stream"],
+  "idPrefixes": ["sample"]
 }
