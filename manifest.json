@@ -2,11 +2,16 @@
   "id": "my-addon",
   "version": "1.0.0",
   "name": "My Live Stream Addon",
-  "types": ["stream"],
   "description": "A live stream addon for Stremio.",
-  "catalogs": [LIVETV],
+  "types": ["stream"],
   "resources": ["catalog", "stream"],
+  "catalogs": [
+    {
+      "type": "tv",
+      "id": "live_tv",
+      "name": "Live TV"
+    }
+  ],
   "idPrefixes": ["custom"],
-  "addons": [LIVETV],
   "icon": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Film_Aksion_AL_logo.png"
 }
