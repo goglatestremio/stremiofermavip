@@ -1,0 +1,9 @@
+{
+  "id": "org.stremio.liveaddon",
+  "version": "1.0.0",
+  "name": "Stremio Live Addon",
+  "description": "Live TV stream using M3U8 link",
+  "resources": ["catalog", "meta", "stream"],
+  "idPrefixes": ["liveaddon"],
+  "types": ["video"]
+}
