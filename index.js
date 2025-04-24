@@ -5,10 +5,10 @@ const builder = new addonBuilder({
   version: "1.0.0",
   name: "Stremio Live Addon",
   description: "Watch live TV channels via M3U8 links",
-  types: ["movie & series"],
+  types: ["tv"],
   resources: ["stream"],
   idPrefixes: ["liveaddon"],
-  catalogs: [movie & series]
+  catalogs: []
 });
 
 const m3u8Link = "http://a1.lion.wine:80/live/x9Kw7670/8cxU9044/1225472.m3u8";
