@@ -1,9 +1,16 @@
 {
-  "id": "org.stremio.liveaddon",
+  "id": "com.yourname.stremioaddon",
   "version": "1.0.0",
-  "name": "Stremio Live Addon",
-  "description": "Live TV stream using M3U8 link",
-  "resources": ["catalog", "meta", "stream"],
-  "idPrefixes": ["liveaddon"],
-  "types": ["video"]
+  "name": "Live TV Channel Addon",
+  "description": "A live TV channel streaming addon",
+  "types": ["streaming"],  // This needs to be an array
+  "resources": ["catalog", "meta"],
+  "idPrefixes": ["com.yourname"],
+  "catalogs": ["livetv:]
+    {
+      "type": "streaming",
+      "id": "tv-channel",
+      "name": "Live TV Channel"
+    }
+  ]
 }
