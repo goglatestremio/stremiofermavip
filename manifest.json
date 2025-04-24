@@ -1,24 +1,17 @@
 {
-  "id": "org.stremio.addon.sample",
+  "id": "com.youraddon.stremio",
   "version": "1.0.0",
-  "name": "My Addon",
-  "description": "This is an example Stremio addon",
-  "types": ["movie", "series"],  // This should be an array with at least one type
-  "icon": "https://example.com/icon.png",
+  "name": "My Live Addon",
+  "types": ["movie", "series"],  // The types should be an array of your addon types
   "catalogs": [
     {
       "type": "movie",
-      "id": "sample-movie-catalog",
-      "name": "Sample Movies",
-      "description": "A sample movie catalog"
-    },
-    {
-      "type": "series",
-      "id": "sample-series-catalog",
-      "name": "Sample Series",
-      "description": "A sample series catalog"
+      "id": "movies",
+      "name": "Movies"
     }
   ],
-  "resources": ["catalog", "meta", "stream"],
-  "idPrefixes": ["sample"]
+  "resources": ["catalog"],
+  "addon": {
+    "url": "http://your-addon-url.com/manifest.json"
+  }
 }
